@@ -1,7 +1,7 @@
 # LungCancer
-Project name: Lung Cancer Detection in CT images using Deep Learning
-La: VISL
-Supervisor: Rami Cohen
+Project name: Lung Cancer Detection in CT images using Deep Learning\n
+La: VISL\n
+Supervisor: Rami Cohen\n
 Students: Haim Ben-Simhon and Tal Hassid
 
 # matlab directory
