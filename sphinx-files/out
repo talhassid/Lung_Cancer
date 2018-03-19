@@ -1,0 +1,41 @@
+ 1882  sphinx-quickstart 
+ 1883  sphinx-build -b builder /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/ /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/_build
+ 1884  cd  /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/
+ 1885  sphinx-build -b builder /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/ /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/_build
+ 1886  pip install sphinx_rtd_theme
+ 1887  sphinx-build -b /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/ /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/_build
+ 1888  sphinx-build -b 
+ 1889  sphinx-build -b html /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/ /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/_build
+ 1890  cd ..
+ 1891  sphinx-build -b html /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/ /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/_build
+ 1892  sphinx-build -b html /home/talhassid/PycharmProjects/Lung_Cancer/ /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/_build
+ 1893  pwd
+ 1894  sphinx-build -b html /home/talhassid/PycharmProjects/Lung_Cancer/ /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/_build
+ 1895  pwd
+ 1896  sphinx-build -b html /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/ /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/_build
+ 1897  make html
+ 1898  cd sphinx-files/
+ 1899  make html
+ 1900  cd ../
+ 1901  sphinx-build -b html /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/ /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/_build
+ 1902  apt-get update
+ 1903  mkdir sphinx-files
+ 1904  cd sphinx-files/
+ 1905  sphinx-quickstart 
+ 1906  pwd
+ 1907  make html
+ 1908  sphinx-apidoc -o /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/rst/ /home/talhassid/PycharmProjects/Lung_Cancer/
+ 1909  cp rst/modules.rst rst/index.rst 
+ 1910  mkdir rst/_static
+ 1911  cp conf.py rst/conf.py
+ 1912  sphinx-build -b html /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/rst /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/_build
+ 1913  sphinx-apidoc -o /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/ /home/talhassid/PycharmProjects/Lung_Cancer/
+ 1914  sphinx-build -b html /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/ /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/_build
+ 1915  sphinx-apidoc -o /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/ /home/talhassid/PycharmProjects/Lung_Cancer/
+ 1916  sphinx-apidoc -o /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/ /home/talhassid/PycharmProjects/Lung_Cancer/
+ 1917  sphinx-build -b html /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/ /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/_build
+ 1929  sphinx-build -b html /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/rst /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/_build
+ 1930  cd sphinx-files/
+ 1931  sphinx-build -b html /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/rst /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/_build
+ 1932  sphinx-build -b html /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/ /home/talhassid/PycharmProjects/Lung_Cancer/sphinx-files/_build
+

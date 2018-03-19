@@ -1,0 +1,343 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Unet package &mdash; LungCancer 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="LungCancer 0.1 documentation" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> LungCancer
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modules.html">Lung_Cancer</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">LungCancer</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Unet package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/rst/Unet.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="unet-package">
+<h1>Unet package<a class="headerlink" href="#unet-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-Unet.Unet_Commands">
+<span id="unet-unet-commands-module"></span><h2>Unet.Unet_Commands module<a class="headerlink" href="#module-Unet.Unet_Commands" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="Unet.Unet_Commands.create_lungmask">
+<code class="descclassname">Unet.Unet_Commands.</code><code class="descname">create_lungmask</code><span class="sig-paren">(</span><em>file_list</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#Unet.Unet_Commands.create_lungmask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creating a mask on the scan that will produce a “clean” lung image.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>file_list</strong> – List of the Lungs paths</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Unet.Unet_Commands.get_mask_from_unet">
+<code class="descclassname">Unet.Unet_Commands.</code><code class="descname">get_mask_from_unet</code><span class="sig-paren">(</span><em>output_path</em>, <em>data</em>, <em>set_name</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#Unet.Unet_Commands.get_mask_from_unet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create masked lungs by prediction of the Unet.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>output_path</strong> – The output path of the masked lungs.</li>
+<li><strong>data</strong> – The path of the data we want to get a prediction on.</li>
+<li><strong>set_name</strong> – test/train</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Unet.Unet_Commands.get_unet">
+<code class="descclassname">Unet.Unet_Commands.</code><code class="descname">get_unet</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Unet.Unet_Commands.get_unet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the Unet layers.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Unet</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Unet.Unet_Commands.load_data">
+<code class="descclassname">Unet.Unet_Commands.</code><code class="descname">load_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#Unet.Unet_Commands.load_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loading the data calling to save data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Unet.Unet_Commands.mask_the_images">
+<code class="descclassname">Unet.Unet_Commands.</code><code class="descname">mask_the_images</code><span class="sig-paren">(</span><em>working_path</em>, <em>set_name</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#Unet.Unet_Commands.mask_the_images" title="Permalink to this definition">¶</a></dt>
+<dd><p>Here we’re applying the masks and cropping and resizing the image.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>working_path</strong> – The path of the data.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Unet.Unet_Commands.save_data">
+<code class="descclassname">Unet.Unet_Commands.</code><code class="descname">save_data</code><span class="sig-paren">(</span><em>working_path: str</em>, <em>set_name: str</em>, <em>output_path</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#Unet.Unet_Commands.save_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saving the data in the working path in npy file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>working_path</strong> – The data path</li>
+<li><strong>set_name</strong> – test/train</li>
+<li><strong>output_path</strong> – The output path</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="unet-unet-main-module">
+<h2>Unet.Unet_main module<a class="headerlink" href="#unet-unet-main-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-Unet.check_results">
+<span id="unet-check-results-module"></span><h2>Unet.check_results module<a class="headerlink" href="#module-Unet.check_results" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-Unet">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Unet" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Haim and Tal.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

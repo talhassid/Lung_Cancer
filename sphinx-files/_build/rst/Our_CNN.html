@@ -1,0 +1,400 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Our_CNN package &mdash; LungCancer 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="LungCancer 0.1 documentation" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> LungCancer
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modules.html">Lung_Cancer</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">LungCancer</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Our_CNN package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/rst/Our_CNN.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="our-cnn-package">
+<h1>Our_CNN package<a class="headerlink" href="#our-cnn-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-Our_CNN.CNN_Commands">
+<span id="our-cnn-cnn-commands-module"></span><h2>Our_CNN.CNN_Commands module<a class="headerlink" href="#module-Our_CNN.CNN_Commands" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="Our_CNN.CNN_Commands.convolutional_neural_network">
+<code class="descclassname">Our_CNN.CNN_Commands.</code><code class="descname">convolutional_neural_network</code><span class="sig-paren">(</span><em>x</em>, <em>keep_rate=0.8</em>, <em>n_classes=2</em><span class="sig-paren">)</span><a class="headerlink" href="#Our_CNN.CNN_Commands.convolutional_neural_network" title="Permalink to this definition">¶</a></dt>
+<dd><p>Building our cnn layers</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>x</strong> – Tensor placeholder</li>
+<li><strong>keep_rate</strong> – default_value=0.8</li>
+<li><strong>n_classes</strong> – number of classes, default value=2</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">output Layer</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Our_CNN.CNN_Commands.get_pixels_hu">
+<code class="descclassname">Our_CNN.CNN_Commands.</code><code class="descname">get_pixels_hu</code><span class="sig-paren">(</span><em>slices</em><span class="sig-paren">)</span><a class="headerlink" href="#Our_CNN.CNN_Commands.get_pixels_hu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert slices pixels to HU units.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>slices</strong> – Scans of patient.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">HU pixel array of the scans</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Our_CNN.CNN_Commands.load_and_process_data">
+<code class="descclassname">Our_CNN.CNN_Commands.</code><code class="descname">load_and_process_data</code><span class="sig-paren">(</span><em>patients</em>, <em>labels_df</em>, <em>data_dir</em>, <em>file_name</em>, <em>train_flag</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#Our_CNN.CNN_Commands.load_and_process_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loading the images and preprocees them.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>patients</strong> – List of patients id’s</li>
+<li><strong>labels_df</strong> – Labels file</li>
+<li><strong>data_dir</strong> – Parent dir</li>
+<li><strong>file_name</strong> – The name of the ouput file</li>
+<li><strong>train_flag</strong> – Flag - if the data is from train set</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Our_CNN.CNN_Commands.load_scan">
+<code class="descclassname">Our_CNN.CNN_Commands.</code><code class="descname">load_scan</code><span class="sig-paren">(</span><em>patient</em>, <em>data_dir</em><span class="sig-paren">)</span><a class="headerlink" href="#Our_CNN.CNN_Commands.load_scan" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loaing the dicom scans of patient.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>patient</strong> – Patient id</li>
+<li><strong>data_dir</strong> – The patients dir</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The scans</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Our_CNN.CNN_Commands.process_data">
+<code class="descclassname">Our_CNN.CNN_Commands.</code><code class="descname">process_data</code><span class="sig-paren">(</span><em>patient</em>, <em>data_dir</em>, <em>img_px_size</em>, <em>hm_slices</em><span class="sig-paren">)</span><a class="headerlink" href="#Our_CNN.CNN_Commands.process_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process patient scans.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>patient</strong> – Id of patient</li>
+<li><strong>data_dir</strong> – Dir of patients</li>
+<li><strong>img_px_size</strong> – The size we want the image to be, default = 100</li>
+<li><strong>hm_slices</strong> – The amount of image we use, default = 20</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">processed 3D image</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Our_CNN.CNN_Commands.resample">
+<code class="descclassname">Our_CNN.CNN_Commands.</code><code class="descname">resample</code><span class="sig-paren">(</span><em>image</em>, <em>scan</em>, <em>img_px_size=50</em>, <em>hm_slices=20</em><span class="sig-paren">)</span><a class="headerlink" href="#Our_CNN.CNN_Commands.resample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resampling image to be in the following shape: img_px_size * img_px_size * hm_slices</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>image</strong> – HU pixel array</li>
+<li><strong>scan</strong> – Original scan</li>
+<li><strong>img_px_size</strong> – The size we want the image to be, default = 100</li>
+<li><strong>hm_slices</strong> – The amount of image we use, default = 20</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">resampled image, the spacing</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Our_CNN.CNN_Commands.test">
+<code class="descclassname">Our_CNN.CNN_Commands.</code><code class="descname">test</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#Our_CNN.CNN_Commands.test" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clarify test set, printing the results</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Our_CNN.CNN_Commands.train_neural_network">
+<code class="descclassname">Our_CNN.CNN_Commands.</code><code class="descname">train_neural_network</code><span class="sig-paren">(</span><em>epochs_count=30</em>, <em>validation_count=100</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#Our_CNN.CNN_Commands.train_neural_network" title="Permalink to this definition">¶</a></dt>
+<dd><p>Train the net with the train set and keep trained net in output file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>epochs_count</strong> – default value=30</li>
+<li><strong>validation_count</strong> – default value=100</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-Our_CNN.Our_Main">
+<span id="our-cnn-our-main-module"></span><h2>Our_CNN.Our_Main module<a class="headerlink" href="#module-Our_CNN.Our_Main" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-Our_CNN">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Our_CNN" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Haim and Tal.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
